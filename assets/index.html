@@ -7,19 +7,19 @@
 <body>
     Hide secret image in another image
 
-    <form method="post" action="/st" enctype="multipart/form-data">
+    <form method="post" action="/enc" enctype="multipart/form-data">
 
-        <input type="file" name="image1" accept="image/*" />
+        <input type="file" name="image1" value="" accept="image/*" />
         <br />
-        <input type="file" name="image2" accept="image/*" />
+        <input type="file" name="image2" value="" accept="image/*" />
         <br />
         <input type="submit" value="Submit" />
     </form>
 
     decode
 
-    <form method="post" action="/de" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*" />
+    <form method="post" action="/dec" enctype="multipart/form-data">
+        <input type="file" name="decodeImage" value="" accept="image/*" />
         <br />
         <input type="submit" value="Submit" />
     </form>
