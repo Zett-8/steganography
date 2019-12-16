@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Steganography</title>
+</head>
+<body>
+    Hide secret image in another image
+
+    <form method="post" action="/st" enctype="multipart/form-data">
+
+        <input type="file" name="image1" accept="image/*" />
+        <br />
+        <input type="file" name="image2" accept="image/*" />
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+
+    decode
+
+    <form method="post" action="/de" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" />
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
